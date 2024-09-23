@@ -148,6 +148,10 @@
         [self actionLoginLocal:sender];
     }];
     [picker addAction:actionLocal];
+    UIAlertAction *actionRusLand = [UIAlertAction actionWithTitle:localize(@"RusLand", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self actionLoginLocal:sender];
+    }];
+    [picker addAction:actionRusLand];
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:localize(@"Cancel", nil) style:UIAlertActionStyleCancel handler:nil];
     [picker addAction:cancel];
 
